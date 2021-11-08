@@ -26,3 +26,13 @@ const mappedArray =  people.map(person => ({id: person.id, firstName: person.nam
 console.log('-- Sukurti masyvą (Array) --', '\n', people);
 console.log('-- Išfiltruoti masyvą pagal parametra isMale --', '\n', filteredArray);
 console.log(' -- Panaudoti map ir sukurti naują masyvą --', '\n', mappedArray);
+
+const numbers = [ 1, -2, 3, -4, 5];
+
+const filteredArray2 = numbers.filter(number => number >= 0);
+
+console.log('-- Sukurti masyvą --', '\n', numbers, '\n', '-- Išfiltruoti skaičius --', '\n', filteredArray2);
+
+const mappedArray2 = numbers.map(number => ([number]));
+
+console.log('-- Sukurti masyvą --', '\n', numbers, '\n', '-- Panaudoti map ir sukurti naują masyvą --', '\n', mappedArray2);
